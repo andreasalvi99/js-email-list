@@ -1,7 +1,11 @@
+// ** HTML elements
+
 const loading = document.getElementById("spinner");
 const mail = document.querySelectorAll(".email-item");
 const mailList = document.querySelector(".list-group");
 const refresh = document.getElementById("refresh-button");
+
+// ** DEVELOPMENT
 
 let mailGenerated = 0;
 
@@ -26,6 +30,8 @@ for (let i = 0; i < 10; i++) {
       }
     });
 }
+
+// ** EVENTS
 
 refresh.addEventListener("click", function () {
   let mailGenerated = 0;

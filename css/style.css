@@ -1,7 +1,8 @@
-.email-item:hover {
+li:hover {
   background-color: #0d6efd;
   color: white;
   transition: all 0.1s ease;
+  transform: scale(1.03);
 }
 
 .email-item {
@@ -11,14 +12,10 @@
 .bi-copy {
   cursor: pointer;
 }
-
-li {
-  width: 500px;
-}
-
-.bi-envelope {
-}
-
 .ciao {
   flex-grow: 1;
+}
+
+button {
+  width: 20%;
 }
