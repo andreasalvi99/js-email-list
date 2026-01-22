@@ -1,4 +1,6 @@
+const loading = document.getElementById("spinner");
 const mail = document.querySelectorAll(".email-item");
+const mailList = document.querySelector(".list-group");
 console.log(mail);
 
 for (let i = 0; i < 10; i++) {
@@ -10,8 +12,12 @@ for (let i = 0; i < 10; i++) {
       const randomMail = response.data.response;
       console.log(randomMail);
       mail[i].innerHTML += randomMail;
+      mailList.classList.remove("d-none");
     })
     .catch((error) => {
-      console.log("Pagina non trovata");
+      console.log(error);
+    })
+    .finally(() => {
+      loading.classList.add("d-none");
     });
 }
