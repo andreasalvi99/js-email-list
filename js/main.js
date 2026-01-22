@@ -6,5 +6,8 @@ for (let i = 0; i < 10; i++) {
 
       const randomMail = response.data.response;
       console.log(randomMail);
+    })
+    .catch((error) => {
+      console.log("Pagina non trovata");
     });
 }
