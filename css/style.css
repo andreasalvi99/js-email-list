@@ -19,3 +19,8 @@ li:hover {
 button {
   width: 20%;
 }
+
+button:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
