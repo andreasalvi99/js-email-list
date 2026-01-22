@@ -3,3 +3,22 @@
   color: white;
   transition: all 0.1s ease;
 }
+
+.email-item {
+  gap: 0.5rem;
+}
+
+.bi-copy {
+  cursor: pointer;
+}
+
+li {
+  width: 500px;
+}
+
+.bi-envelope {
+}
+
+.ciao {
+  flex-grow: 1;
+}

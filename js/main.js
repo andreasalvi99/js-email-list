@@ -11,7 +11,10 @@ for (let i = 0; i < 10; i++) {
     .then((response) => {
       const randomMail = response.data.response;
       mailGenerated++;
-      mail[i].innerHTML += `<i class="bi bi-envelope"></i> ` + randomMail;
+      mail[i].innerHTML +=
+        `<i class="bi bi-envelope d-inline-block"></i> ` +
+        ` <span class="ciao">${randomMail}</span>` +
+        ` <i class="bi bi-copy d-inline-block"></i>`;
     })
     .catch((error) => {
       console.log(error);
@@ -35,7 +38,10 @@ refresh.addEventListener("click", function () {
       .then((response) => {
         const randomMail = response.data.response;
         mailGenerated++;
-        mail[i].innerHTML += `<i class="bi bi-envelope"></i> ` + randomMail;
+        mail[i].innerHTML +=
+          `<i class="bi bi-envelope d-inline-block"></i> ` +
+          ` <span class="ciao">${randomMail}</span>` +
+          ` <i class="bi bi-copy d-inline-block"></i>`;
       })
       .finally(() => {
         if (mailGenerated === 10) {
