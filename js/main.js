@@ -27,6 +27,7 @@ for (let i = 0; i < 10; i++) {
 refresh.addEventListener("click", function () {
   let mailGenerated = 0;
   loading.classList.remove("d-none");
+
   for (let i = 0; i < 10; i++) {
     mail[i].innerHTML = "";
     axios

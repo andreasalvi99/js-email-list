@@ -1,0 +1,5 @@
+.email-item:hover {
+  background-color: #0d6efd;
+  color: white;
+  transition: all 0.1s ease;
+}
